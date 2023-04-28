@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types'
 import { Text } from 'react-native'
 import { ViewPropTypes } from 'deprecated-react-native-prop-types'
+import { TextPropTypes} from 'deprecated-react-native-prop-types'
+
 
 import selectInputPropTypes from '../AbstractSelectInput/types.js'
 
@@ -9,16 +11,16 @@ export default {
   cancelKeyText: PropTypes.string,
   submitKeyText: PropTypes.string,
   buttonsTextStyle: PropTypes.oneOfType([
-    Text.propTypes.style,
-    PropTypes.arrayOf(Text.propTypes.style)
+    TextPropTypes.style,
+    PropTypes.arrayOf(TextPropTypes.style)
   ]),
   buttonsViewStyle: PropTypes.oneOfType([
     ViewPropTypes.style,
     PropTypes.arrayOf(ViewPropTypes.style)
   ]),
   pickerItemStyle: PropTypes.oneOfType([
-    Text.propTypes.style,
-    PropTypes.arrayOf(Text.propTypes.style)
+    TextPropTypes.style,
+    PropTypes.arrayOf(TextPropTypes.style)
   ]),
   pickerViewStyle: PropTypes.oneOfType([
     ViewPropTypes.style,
